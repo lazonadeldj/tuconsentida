@@ -22,7 +22,7 @@
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url('h-14-20-53-52-913.pngttps://i.postimg.cc/66VJ4GHH/Picsart-25-07');
+    background-image: url('https://i.postimg.cc/66VJ4GHH/Picsart-25-07-14-20-53-52-913.png');
     background-size: cover;
     background-position: center;
     animation: zoomPan 20s linear infinite;
@@ -117,7 +117,7 @@
     justify-content: center;
     align-items: center;
     animation: spin 6s linear infinite;
-    border: 8px solid #b8d113;
+    border: 8px solid #FFD700;
     background: none;
 }
 .disc img {
@@ -136,8 +136,8 @@
   .play-btn {
     margin-left: -47px;
     margin-top: -45px;
-    background: rgba(0, 255, 0, 0.818);
-    border: 8px solid #ff0000;
+    background: red;
+    border: 8px solid #FFD700;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -505,8 +505,8 @@ audio {
 
 <img alt="Overlay" class="overlay-image" src="https://i.ibb.co/SXGzC6dJ/fondo-cortado.png"/>
 <div class="top-bar">
-<span>Estamos</span>
-<span class="live-badge">En Vivo</span>
+<span>REPRODUCIENDO</span>
+<span class="live-badge">EN VIVO</span>
 </div>
 <div class="content" style="margin-top: 120px">
 <img alt="Logo" class="logo" src="https://i.ibb.co/YF3XPJhp/logoquegira.png"/>
@@ -699,7 +699,8 @@ function fetchArtworkFromiTunes(title) {
       updateMediaSession(title, "Tu Consentida", artworkUrl);
     })
     .catch(() => {
-      const fallbackImage = "https://i.ibb.co/W4bchPmL/Picsart-25-06-22-18-43-16-789.png";play
+      const fallbackImage = "https://i.ibb.co/k2pz5pkL/logodiscogira.png";
+      document.querySelector(".disc img").src = fallbackImage;
       updateMediaSession(title, "Tu Consentida", fallbackImage);
     });
 }
@@ -713,7 +714,7 @@ function updateMediaSession(title = "Transmitiendo...", artist = "Tu Consentida"
       artist: artist,
       album: "Radio en Vivo",
       artwork: [
-        { src: artworkUrl || "https://i.ibb.co/W4bchPmL/Picsart-25-06-22-18-43-16-789.png", sizes: "300x300", type: "image/png" }
+        { src: artworkUrl || "https://i.ibb.co/k2pz5pkL/logodiscogira.png", sizes: "300x300", type: "image/png" }
       ]
     });
 
@@ -733,19 +734,18 @@ function updateMediaSession(title = "Transmitiendo...", artist = "Tu Consentida"
 
 </script>
 <div class="social-bar">
-<a href="https://www.facebook.com/profile.php?id=100089801830336" target="_blank">
+<a href="https://www.facebook.com/share/p/1AxGzYp4TB/" target="_blank">
 <img alt="Facebook" src="https://cdn-icons-png.flaticon.com/512/733/733547.png"/>
 </a>
-<a href="https://www.tiktok.com/" target="_blank">
+<a href="https://www.tiktok.com/@tava917?_t=ZM-8y3WqJ20OOL&_r=1" target="_blank">
 <img alt="TikTok" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"/>
 </a>
-<a href="https://wa.me/593980517644?text=Escucha%20La%20Tu%20Consentida%20Radio%20🔥" target="_blank">
+<a href="https://wa.me/593980517644?text=Escucha%20Radio%20Caliente%20en%20vivo%20🔥%20https%3A%2F%2Fstream.zeno.fm%2Fgwt3ymgwxg0uv" target="_blank">
 <img alt="WhatsApp" src="https://cdn-icons-png.flaticon.com/512/733/733585.png"/>
 </a>
 <a href="https://my.cbox.ws/TuConsentidaChat" target="_blank">
-<img alt="chatModal" src="https://i.ibb.co/5XCySWHt/chat.png"/>
+<img alt="my.cbox.ws" src="https://i.ibb.co/5XCySWHt/chat.png"/>
 </a>
-    </div>
 </div>
 <div id="platform-links" style="margin-top: 20px; text-align: center;">
 <p style="color: white; font-weight: bold;">Ver en otras plataformas:</p>
@@ -792,7 +792,7 @@ function fetchArtworkFromAllSources(title) {
 }
 
 function fetchMetadata() {
-  fetch("https://api.zeno.fm/mounts/metadata/subscribe/schpxuubvv8uv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/s0xcmkiok6zuv")
     .then(res => res.json())
     .then(data => {
       const title = data.songtitle || data.song || "Transmitiendo...";
@@ -805,7 +805,7 @@ function fetchMetadata() {
 }
 </script>
 
-<script>document.querySelector('.share-icon')?.addEventListener('click',()=>{if(navigator.share){navigator.share({title:'Tu Consentida 🔥',text:'Escucha en vivo a Tu Consentida',url:window.location.href}).catch((err)=>{console.error("Error al compartir:",err);});}else{alert("Tu navegador no admite la función de compartir.");}});</script>
+<script>document.querySelector('.share-icon')?.addEventListener('click',()=>{if(navigator.share){navigator.share({title:'Tu Consentida🔥',text:'Escucha en vivo Tu Consentida',url:window.location.href}).catch((err)=>{console.error("Error al compartir:",err);});}else{alert("Tu navegador no admite la función de compartir.");}});</script>
 
 <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js');}</script>
 
