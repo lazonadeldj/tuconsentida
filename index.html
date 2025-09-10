@@ -587,7 +587,7 @@ playBtn.addEventListener("click", () => {
 
 const trackInfoElement = document.getElementById("track-info");
 function fetchMetadata() {
-  fetch("https://server-dnsxyz.xyz/icy.php?url=https://stream.zeno.fm/schpxuubvv8uv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/schpxuubvv8uv")
     .then(res => res.json())
     .then(data => {
       const title = data.songtitle || data.song || "Transmitiendo...";
@@ -792,7 +792,7 @@ function fetchArtworkFromAllSources(title) {
 }
 
 function fetchMetadata() {
-  fetch("https://free.miradio.pro/icy?url=https://stream.zeno.fm/schpxuubvv8uv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/schpxuubvv8uv")
     .then(res => res.json())
     .then(data => {
       const title = data.songtitle || data.song || "Transmitiendo...";
