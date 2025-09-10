@@ -519,7 +519,7 @@ audio {
 <div class="bar"></div>
 <div class="bar"></div>
 </div>
-<h2 style="color: white;">Tu Consentida</h2>
+<h2 style="color: white;"></h2>
 <p id="track-info" style="color: white; font-size: 0.9rem;">Cargando canción...</p>
 </div>
 <div class="player-fixed">
@@ -696,12 +696,12 @@ function fetchArtworkFromiTunes(title) {
       if (dynamicBg) dynamicBg.style.backgroundImage = `url('${artworkUrl}')`;
 
       }
-      updateMediaSession(title, "Tu Consentida", artworkUrl);
+      updateMediaSession(title, "", artworkUrl);
     })
     .catch(() => {
       const fallbackImage = "https://i.ibb.co/k2pz5pkL/logodiscogira.png";
       document.querySelector(".disc img").src = fallbackImage;
-      updateMediaSession(title, "Tu Consentida", fallbackImage);
+      updateMediaSession(title, "", fallbackImage);
     });
 }
 
