@@ -1,18 +1,18 @@
 {
-  "name": "La Zona Del Dj",
-  "short_name": "La Zona Del Dj",
+  "name": "Tu Consentida",
+  "short_name": "Tu Consentida",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "https://i.ibb.co/0ySxmdZw/logodiscogira.png",
+      "src": "https://i.ibb.co/ZzqB6xJf/Picsart-25-06-21-23-48-39-723.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://i.ibb.co/nqFLHmJd/logoquegira.png",
+      "src": "https://i.ibb.co/k2pz5pkL/logodiscogira.png",
       "sizes": "512x512",
       "type": "image/png"
     }

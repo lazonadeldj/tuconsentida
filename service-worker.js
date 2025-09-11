@@ -1,7 +1,7 @@
-const CACHE_NAME = 'la-zona-del-dj-v1';
+const CACHE_NAME = 'tu-consentida-v1';
 const URLS_TO_CACHE = [
   '/',
-  '/la_zona_del_dj_PROYECTO_BASE64.html',
+  '/tu_consentida_radio_PROYECTO_BASE64.html',
   '/manifest.json'
 ];
 
